@@ -1,0 +1,88 @@
+html {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+footer {
+  background-color: gray;
+  color: white;
+  height: 15px;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 12px -2 black;
+}
+
+nav {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  text-align: center;
+  background-color: aquamarine;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav h1 {
+  font-size: 40px;
+  color: rgb(255, 253, 253);
+  text-shadow: 0px 0px 20px rgba(233, 109, 26, 0.904);
+  margin: 5px 20px;
+}
+nav a {
+  color: white;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  font-size: x-large;
+}
+nav .divlinks {
+  vertical-align: middle;
+  margin: 0 20px;
+}
+nav .links {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.main {
+  background-color: rgba(39, 173, 35, 0.705);
+  min-height: calc(100vh - 100px);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main .index {
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+}
+.main .index h2 {
+  margin: 10px 30px;
+  font-size: x-large;
+}
+.main .index p {
+  margin: 100px 30px;
+  font-size: large;
+}
+.main img {
+  margin: 0 10px;
+  width: calc(50% - 15px);
+  height: auto;
+  border-radius: 15%;
+}/*# sourceMappingURL=style.css.map */
