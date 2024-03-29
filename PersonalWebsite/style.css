@@ -8,10 +8,17 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   padding-top: 70px;
+  position: relative;
+}
+body .logo {
+  position: absolute;
+  z-index: 1;
+  width: auto;
+  height: calc(100vh - 300px);
+  z-index: 5;
 }
 
 footer {
-  background-color: gray;
   color: white;
   height: 15px;
   padding: 10px;
@@ -31,17 +38,22 @@ nav {
   left: 0;
   height: 70px;
   text-align: center;
-  background-color: aquamarine;
   vertical-align: middle;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-image: url("./assets/NavImage.png");
+  background-size: 100vw 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 nav h1 {
   font-size: 40px;
   color: rgb(255, 253, 253);
   text-shadow: 0px 0px 20px rgba(233, 109, 26, 0.904);
-  margin: 5px 20px;
+  text-align: center;
+  margin: 8px 0 0 0;
 }
 nav a {
   color: white;
@@ -51,7 +63,7 @@ nav a {
 }
 nav .divlinks {
   vertical-align: middle;
-  margin: 0 20px;
+  margin-right: 20px;
 }
 nav .links {
   display: inline-block;
@@ -59,12 +71,12 @@ nav .links {
 }
 
 .main {
-  background-color: rgba(39, 173, 35, 0.705);
   min-height: calc(100vh - 100px);
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  z-index: 4;
 }
 .main .index {
   color: rgb(0, 0, 0);
@@ -75,10 +87,12 @@ nav .links {
 .main .index h2 {
   margin: 10px 30px;
   font-size: x-large;
+  text-align: center;
 }
 .main .index p {
   margin: 100px 30px;
   font-size: large;
+  text-align: center;
 }
 .main img {
   margin: 0 10px;
