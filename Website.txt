@@ -1,0 +1,15 @@
+Personal site content
+    Index
+        Main page
+            Picture of me
+            Backgorund (Nationality and How)
+            Hobbies
+            Goals
+    About
+        Ocupation
+        Hobbies
+
+    Portafolio
+        Link to repositories where of my class work
+        I should probably create a main repository for all my work instead of having one per section
+
