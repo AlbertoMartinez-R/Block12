@@ -1,102 +1,141 @@
 html {
-  height: 100vh;
-  width: 100%;
   position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(20, 33, 61);
+  min-width: 350px;
 }
 
 body {
+  background-color: rgb(229, 229, 229);
+  margin: 80px auto 0px;
+  width: calc(100vw - 20px);
   max-width: 1500px;
-  margin: 0 auto;
-  padding-top: 70px;
-  position: relative;
+  height: calc(100vh - nav);
 }
-body .logo {
-  position: absolute;
-  z-index: 1;
-  width: auto;
-  height: calc(100vh - 300px);
-  z-index: 5;
-}
-
-footer {
-  color: white;
-  height: 15px;
-  padding: 10px;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+body header nav {
+  background-color: rgb(0, 0, 0);
   width: 100%;
-  text-align: center;
-  box-shadow: 0 0 12px -2 black;
-}
-
-nav {
-  width: 100vw;
   position: fixed;
   top: 0;
+  right: 0;
   left: 0;
-  height: 70px;
-  text-align: center;
-  vertical-align: middle;
-  display: flex;
-  flex-direction: row;
+  height: 80px;
   justify-content: space-between;
-  background-image: url("./assets/NavImage.png");
-  background-size: 100vw 70px;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1;
+  display: flex;
+  align-items: center;
 }
-nav h1 {
-  font-size: 40px;
-  color: rgb(255, 253, 253);
-  text-shadow: 0px 0px 20px rgba(233, 109, 26, 0.904);
-  text-align: center;
-  margin: 8px 0 0 0;
+body header nav h1 {
+  padding-left: 20px;
+  color: rgb(209, 139, 25);
 }
-nav a {
-  color: white;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  font-size: x-large;
+body header nav ul {
+  padding: 0px 20px 0px 0px;
 }
-nav .divlinks {
-  vertical-align: middle;
-  margin-right: 20px;
-}
-nav .links {
+body header nav ul li {
+  list-style: none;
   display: inline-block;
-  margin-right: 15px;
+  padding-right: 15px;
+}
+body header nav ul li a {
+  text-decoration: none;
+}
+body section {
+  height: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+body section .index {
+  padding: 15px;
+}
+body section img {
+  padding: 15px;
+  width: calc(50% - 30px);
+}
+body footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+body footer a {
+  border-radius: 20px;
+  position: relative;
+  bottom: -5px;
+  padding: 0 5px;
+}
+body footer a :hover {
+  background-color: blue;
+}
+body footer img {
+  width: 30px;
+  vertical-align: middle;
+}
+body footer .logo {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
 }
 
-.main {
-  min-height: calc(100vh - 100px);
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  z-index: 4;
+/* Base styles that apply to mobile devices */
+@media (max-width: 640px) {
+  /* Adjustments for large mobile devices to small tablets */
+  body {
+    width: calc(100vw - 20px);
+    margin-top: 150px;
+  }
+  body header nav {
+    height: 150px;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  body header nav h1 {
+    margin: 15px 0px 0px;
+    padding: 0;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.486);
+  }
+  body header nav ul {
+    margin: 0;
+    width: 235px;
+    padding: 0;
+  }
+  body header nav ul li {
+    text-align: center;
+    display: block;
+    padding: 0;
+    margin: 6px;
+    border-radius: 15px;
+    background-color: rgba(209, 139, 25, 0.75);
+  }
+  body header nav ul li a {
+    -webkit-text-decoration: solid;
+            text-decoration: solid;
+    color: white;
+  }
+  body section {
+    display: flex;
+    flex-direction: column;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body section .index {
+    width: 85%;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  body section img {
+    padding: 15px;
+    width: calc(90% - 30px);
+  }
 }
-.main .index {
-  color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  vertical-align: middle;
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Adjustments for large tablets to small desktops */
 }
-.main .index h2 {
-  margin: 10px 30px;
-  font-size: x-large;
-  text-align: center;
-}
-.main .index p {
-  margin: 100px 30px;
-  font-size: large;
-  text-align: center;
-}
-.main img {
-  margin: 0 10px;
-  width: calc(50% - 15px);
-  height: auto;
-  border-radius: 15%;
+@media (min-width: 1921px) {
+  /* Adjustments for extra large screens */
 }/*# sourceMappingURL=style.css.map */
